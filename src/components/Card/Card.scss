@@ -1,0 +1,32 @@
+.card {
+  width: 100%;
+  min-height: 180px;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .card__name {
+    min-height: 70px;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding: 20px;
+  }
+
+  .card-state__container {
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card__state {
+      color: black;
+      font-size: 2.3rem;
+    }
+  }
+}
