@@ -25,7 +25,7 @@ const MainPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4444/rovers")
+      .get("https://rovers-mars.herokuapp.com/rovers")
       .then((res) => {
         dispatch(rovers(res.data));
       })

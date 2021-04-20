@@ -27,7 +27,7 @@ const AddRoverContainer = () => {
   const lunchNewRover = () => {
     if (roverName) {
       axios
-        .post(`http://localhost:4444/add-rover/${roverName}`)
+        .post(`https://rovers-mars.herokuapp.com/add-rover/${roverName}`)
         .then((res) => {
           dispatch(newRover(res.data));
         })
